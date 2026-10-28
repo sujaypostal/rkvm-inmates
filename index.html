@@ -3,7 +3,7 @@
 <script>
 /* ⚙ শুধু এই একটা লাইন বদলাবেন: Apps Script → Deploy → Manage deployments-এর Web app URL (…/exec) */
 window.APP_CFG={
-  url:'PASTE_YOUR_EXEC_URL_HERE',
+  url:'https://script.google.com/macros/s/AKfycbyE1oDfxpfD_JS58LnieTQO9kpyjin_JgP5pd0ym37lmIsSdNtonQ-aVlwZX0ri3W3apQ/exec',
   key:'inmates',name:'INMATES DATABASE',sw:'sw.js',
   tokenVars:['TOKEN'],loginFns:['loginInmatesUser'],logoutFns:['logoutInmatesUser'],ctxExpr:"(typeof SEC_STATE!=='undefined'&&SEC_STATE.sec)||''",ctxFn:'switchInmatesSection',offlineRead:['switchInmatesSection'],
   queue:['saveStudent','saveAttendance','saveAttendanceMany','saveMonthlyAttendance','addLeave','addHealthRecord','editHealthRecord','saveUniformMeasurements','saveExtensionDate']
