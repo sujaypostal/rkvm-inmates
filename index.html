@@ -3,13 +3,13 @@
 <script>
 /* ⚙ শুধু এই একটা লাইন বদলাবেন: Apps Script → Deploy → Manage deployments-এর Web app URL (…/exec) */
 window.APP_CFG={
-  url:'https://script.google.com/macros/s/AKfycbyE1oDfxpfD_JS58LnieTQO9kpyjin_JgP5pd0ym37lmIsSdNtonQ-aVlwZX0ri3W3apQ/exec',
+  url:'PASTE_YOUR_EXEC_URL_HERE',
   key:'inmates',name:'INMATES DATABASE',sw:'sw.js',
   tokenVars:['TOKEN'],loginFns:['loginInmatesUser'],logoutFns:['logoutInmatesUser'],ctxExpr:"(typeof SEC_STATE!=='undefined'&&SEC_STATE.sec)||''",ctxFn:'switchInmatesSection',offlineRead:['switchInmatesSection'],
   queue:['saveStudent','saveAttendance','saveAttendanceMany','saveMonthlyAttendance','addLeave','addHealthRecord','editHealthRecord','saveUniformMeasurements','saveExtensionDate']
 };
 </script>
-<script src="shim.js"></script>
+<script src="shim.js?v=5"></script>
 </head><body style="font-family:Arial,sans-serif;text-align:center;background:#f6f3ef;color:#333">
 <div id="offlBoot" style="margin-top:22vh"><div style="font-size:42px">⏳</div><h2>INMATES DATABASE</h2><p>খুলছে…</p></div>
 </body></html>
